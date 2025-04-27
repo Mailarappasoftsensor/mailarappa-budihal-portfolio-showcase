@@ -1,7 +1,6 @@
-
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import { Menu, X, GitHub, Linkedin, FileText } from "lucide-react";
+import { Menu, X, Github, Linkedin, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -117,7 +116,7 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="text-portfolio-text hover:text-portfolio-primary p-2"
               >
-                <GitHub />
+                <Github />
               </a>
               <a
                 href="https://bit.ly/3WLyKq"

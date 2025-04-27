@@ -1,8 +1,7 @@
-
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { GitHub, Link } from "lucide-react";
+import { Github, Link } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const projects = [
@@ -106,7 +105,7 @@ const Projects = () => {
                   <div className="flex gap-4">
                     <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0">
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                        <GitHub className="w-4 h-4 mr-1" />
+                        <Github className="w-4 h-4 mr-1" />
                         <span>Code</span>
                       </a>
                     </Button>

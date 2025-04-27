@@ -1,8 +1,7 @@
-
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
-import { GitHub, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -39,7 +38,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className="contact-link flex flex-col items-center text-portfolio-text"
             >
-              <GitHub className="w-6 h-6 mb-2" />
+              <Github className="w-6 h-6 mb-2" />
               <span className="text-sm">GitHub</span>
             </a>
             

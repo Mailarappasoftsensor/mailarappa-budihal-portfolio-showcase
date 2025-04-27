@@ -1,7 +1,6 @@
-
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { GitHub, Linkedin, ArrowRight } from "lucide-react";
+import { Github, Linkedin, ArrowRight } from "lucide-react";
 import { Link } from "react-scroll";
 
 const Hero = () => {
@@ -93,7 +92,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="text-portfolio-text hover:text-portfolio-primary transition-colors"
               >
-                <GitHub className="w-5 h-5" />
+                <Github className="w-5 h-5" />
               </a>
               <a
                 href="https://bit.ly/3WLyKq"
