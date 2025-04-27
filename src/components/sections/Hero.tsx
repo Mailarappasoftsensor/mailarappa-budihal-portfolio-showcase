@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, ArrowRight } from "lucide-react";
 import { Link } from "react-scroll";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false);
@@ -19,6 +20,18 @@ const Hero = () => {
       
       <div className="container mx-auto px-4">
         <div className="max-w-3xl">
+          <div 
+            className={`mb-8 opacity-0 ${
+              mounted ? "animate-fade-in" : ""
+            }`}
+            style={{ animationDelay: "0.1s" }}
+          >
+            <Avatar className="w-32 h-32 mx-auto mb-6 border-4 border-portfolio-primary">
+              <AvatarImage src="/lovable-uploads/48d5e614-364e-4a28-a1bd-a7b0b86471ce.png" alt="Mailarappa Budihal" />
+              <AvatarFallback>MB</AvatarFallback>
+            </Avatar>
+          </div>
+
           <p 
             className={`mono text-portfolio-primary mb-5 text-lg opacity-0 ${
               mounted ? "animate-fade-in" : ""
