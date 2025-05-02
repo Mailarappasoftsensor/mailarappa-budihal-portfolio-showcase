@@ -57,7 +57,7 @@ const Hero = () => {
             }`}
             style={{ animationDelay: "0.6s" }}
           >
-            I build things for the web.
+            I build robust backend solutions.
           </h2>
           
           <div 
@@ -83,9 +83,32 @@ const Hero = () => {
             }`}
             style={{ animationDelay: "1s" }}
           >
-            I'm a backend developer specializing in building robust APIs and server-side applications.
-            Currently focused on creating scalable web applications using Node.js, Express, and MongoDB.
+            I'm a specialized backend developer focused on building secure, scalable API solutions and efficient database systems. 
+            I transform complex requirements into reliable server-side architectures using Node.js, Express, and MongoDB.
           </p>
+
+          <div 
+            className={`mb-8 opacity-0 ${
+              mounted ? "animate-fade-in" : ""
+            }`}
+            style={{ animationDelay: "1.1s" }}
+          >
+            <h3 className="text-portfolio-primary font-semibold mb-2">Core Expertise:</h3>
+            <ul className="grid grid-cols-2 gap-2">
+              <li className="flex items-center text-sm text-portfolio-text">
+                <span className="text-portfolio-primary mr-2">►</span> RESTful API Development
+              </li>
+              <li className="flex items-center text-sm text-portfolio-text">
+                <span className="text-portfolio-primary mr-2">►</span> Database Design & Optimization
+              </li>
+              <li className="flex items-center text-sm text-portfolio-text">
+                <span className="text-portfolio-primary mr-2">►</span> Authentication Systems
+              </li>
+              <li className="flex items-center text-sm text-portfolio-text">
+                <span className="text-portfolio-primary mr-2">►</span> Cloud Services Integration
+              </li>
+            </ul>
+          </div>
           
           <div 
             className={`flex flex-wrap items-center gap-4 opacity-0 ${

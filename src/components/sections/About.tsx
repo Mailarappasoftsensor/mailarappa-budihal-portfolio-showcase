@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useInView } from "react-intersection-observer";
 
 const About = () => {
@@ -23,15 +23,28 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-10">
             <div className="md:col-span-2">
               <p className="text-portfolio-text mb-4">
-                Hello! I'm Mailarappa Budihal, a backend developer passionate about building web applications. My journey in technology started during my agriculture studies, where I discovered my interest in programming.
+                Hello! I'm Mailarappa Budihal, a backend developer with a passion for building robust, scalable web applications. 
+                My journey in technology began during my agriculture studies, where I discovered programming could solve real-world 
+                agricultural challenges, leading me to pursue a career in software development.
               </p>
               
               <p className="text-portfolio-text mb-4">
-                After completing my B.Sc in Agriculture, I transitioned to web development through the FunctionUp program, where I specialized in backend technologies like Node.js, Express, and MongoDB.
+                After completing my B.Sc in Agriculture, I made a significant career pivot through the FunctionUp program, 
+                where I specialized in backend technologies like Node.js, Express, and MongoDB. This transition allowed me to 
+                combine my analytical thinking from my agricultural background with technical skills.
               </p>
               
+              <div className="mb-6 p-4 border-l-4 border-portfolio-primary bg-portfolio-dark/30">
+                <h3 className="text-white text-xl mb-2">My Work Philosophy</h3>
+                <p className="text-portfolio-text italic">
+                  "I believe in writing clean, maintainable code that solves real problems. My approach 
+                  combines technical excellence with practical solutions, always keeping the end user in mind."
+                </p>
+              </div>
+              
               <p className="text-portfolio-text mb-6">
-                I enjoy solving complex problems and creating efficient, scalable applications. My background in agriculture gives me a unique perspective on technology and its real-world applications.
+                I enjoy tackling complex problems and creating efficient, scalable applications. My unique background in agriculture 
+                gives me a different perspective on technology implementation, especially for real-world applications.
               </p>
 
               <p className="text-portfolio-text">
@@ -70,7 +83,7 @@ const About = () => {
               <div className="relative z-10 border-2 border-portfolio-primary rounded-md overflow-hidden">
                 <div className="absolute inset-0 bg-portfolio-primary opacity-20 group-hover:opacity-10 transition-opacity"></div>
                 <img 
-                  src="https://placehold.co/400x500/0a192f/64ffda?text=Mailarappa+Budihal" 
+                  src="/lovable-uploads/48d5e614-364e-4a28-a1bd-a7b0b86471ce.png" 
                   alt="Mailarappa Budihal" 
                   className="mix-blend-multiply filter grayscale hover:filter-none transition-all w-full"
                 />

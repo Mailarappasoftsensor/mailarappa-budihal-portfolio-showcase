@@ -2,7 +2,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Calendar } from "lucide-react";
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -18,13 +18,20 @@ const Contact = () => {
           className={`section ${inView ? "animate-fade-in" : ""}`}
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
-          <p className="text-portfolio-primary mono mb-2">06. What's Next?</p>
+          <p className="text-portfolio-primary mono mb-2">07. What's Next?</p>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Get In Touch</h2>
           
-          <p className="text-portfolio-text mb-8">
+          <p className="text-portfolio-text mb-5">
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 
             I'll do my best to get back to you!
           </p>
+          
+          <div className="flex items-center justify-center mb-8">
+            <Calendar className="w-5 h-5 text-portfolio-primary mr-2" />
+            <p className="text-portfolio-text">
+              <span className="font-medium text-white">Availability:</span> Open to full-time positions and freelance projects
+            </p>
+          </div>
           
           <Button asChild className="bg-transparent border border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 mb-12">
             <a href="mailto:mailarappanew@gmail.com">

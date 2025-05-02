@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
@@ -8,7 +9,9 @@ const projects = [
   {
     title: "E-commerce Product Management",
     description:
-      "A comprehensive backend system for managing e-commerce products with user authentication, product catalog, and image handling using AWS S3.",
+      "A comprehensive backend system for managing e-commerce products with user authentication, product catalog, and image handling.",
+    problem: "E-commerce platforms need robust product management systems that handle large catalogs while providing fast search and efficient image storage.",
+    solution: "Implemented a RESTful API using Node.js and Express with JWT authentication, MongoDB for data storage, and AWS S3 for image optimization.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "AWS S3", "JWT"],
     github: "https://github.com/Mailarappa-Budihal",
     demo: "#",
@@ -18,6 +21,8 @@ const projects = [
     title: "URL Shortener",
     description:
       "A URL shortening service with Redis caching for improved performance and analytics for tracking link usage.",
+    problem: "Long URLs are difficult to share and remember. Existing solutions lack detailed analytics and caching for high-traffic scenarios.",
+    solution: "Built a system that generates short, unique URLs with Redis caching to handle high traffic loads and MongoDB for persistent storage.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "Redis"],
     github: "https://github.com/Mailarappa-Budihal",
     demo: "#",
@@ -26,7 +31,9 @@ const projects = [
   {
     title: "Book Management",
     description:
-      "A RESTful API for managing books with features like user authentication, authorization, CRUD operations, and AWS S3 integration for book covers.",
+      "A RESTful API for managing books with features like user authentication, authorization, CRUD operations, and AWS S3 integration.",
+    problem: "Libraries and book retailers need systems to efficiently manage their inventory with user access controls and cloud storage for cover images.",
+    solution: "Developed an API with role-based access control, MongoDB for book metadata, and AWS S3 integration for storing and retrieving book covers.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "AWS S3", "JWT"],
     github: "https://github.com/Mailarappa-Budihal",
     demo: "#",
@@ -35,7 +42,9 @@ const projects = [
   {
     title: "Infinite Scrolling",
     description:
-      "A product listing application with infinite scrolling functionality to dynamically load products as the user scrolls down the page.",
+      "A product listing application with infinite scrolling functionality to dynamically load products as the user scrolls down.",
+    problem: "Traditional pagination disrupts user experience. Loading all products at once impacts performance with large datasets.",
+    solution: "Implemented server-side pagination with cursor-based approach and frontend infinite scroll for seamless data loading.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "InfiniteScroll"],
     github: "https://github.com/Mailarappa-Budihal",
     demo: "#",
@@ -45,6 +54,8 @@ const projects = [
     title: "Blog Management",
     description:
       "A blog platform with user authentication, blog post creation, editing, and commenting functionality.",
+    problem: "Content creators need platforms that allow easy content management with user engagement features.",
+    solution: "Created a RESTful API with user authentication, rich text editing capabilities, and a comment system with moderation features.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "JWT"],
     github: "https://github.com/Mailarappa-Budihal",
     demo: "#",
@@ -90,9 +101,17 @@ const Projects = () => {
                   <CardTitle className="text-white text-xl">{project.title}</CardTitle>
                 </CardHeader>
                 <CardContent className="pb-2">
-                  <CardDescription className="text-portfolio-text text-sm">
+                  <CardDescription className="text-portfolio-text text-sm mb-3">
                     {project.description}
                   </CardDescription>
+                  <div className="mb-3">
+                    <h4 className="text-xs uppercase text-portfolio-primary font-semibold mb-1">Problem:</h4>
+                    <p className="text-xs text-portfolio-text">{project.problem}</p>
+                  </div>
+                  <div className="mb-3">
+                    <h4 className="text-xs uppercase text-portfolio-primary font-semibold mb-1">Solution:</h4>
+                    <p className="text-xs text-portfolio-text">{project.solution}</p>
+                  </div>
                 </CardContent>
                 <CardFooter className="flex flex-col items-start">
                   <div className="flex flex-wrap gap-2 mb-4">
