@@ -27,7 +27,7 @@ const Contact = () => {
           </p>
           
           <Button asChild className="bg-transparent border border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 mb-12">
-            <a href="mailto:mailarappabudihal@gmail.com">
+            <a href="mailto:mailarappanew@gmail.com">
               Say Hello
             </a>
           </Button>
@@ -44,7 +44,7 @@ const Contact = () => {
             </a>
             
             <a 
-              href="https://bit.ly/3WL5tvd" 
+              href="https://www.linkedin.com/in/mailarappa-budihal-795291194/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link flex flex-col items-center text-portfolio-text"
@@ -54,7 +54,7 @@ const Contact = () => {
             </a>
             
             <a 
-              href="mailto:mailarappabudihal@gmail.com" 
+              href="mailto:mailarappanew@gmail.com" 
               className="contact-link flex flex-col items-center text-portfolio-text"
             >
               <Mail className="w-6 h-6 mb-2" />

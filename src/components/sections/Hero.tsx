@@ -109,7 +109,7 @@ const Hero = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://bit.ly/3WL5tvd"
+                href="https://www.linkedin.com/in/mailarappa-budihal-795291194/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-portfolio-text hover:text-portfolio-primary transition-colors"
