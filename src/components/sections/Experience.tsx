@@ -2,6 +2,8 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Link2, ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 const experiences = [
   {
@@ -18,6 +20,12 @@ const experiences = [
       "Implemented OAuth 2.0 and JWT for secure authentication, improving system security and user experience",
     ],
     skills: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Twilio API", "JWT", "Data Visualization", "AI Integration", "Database Design"],
+    achievements: [
+      { metric: "30%", description: "Operational efficiency improvement" },
+      { metric: "45%", description: "Reduction in response times" },
+      { metric: "20+ hrs", description: "Weekly time savings" },
+      { metric: "35%", description: "Database query performance boost" }
+    ]
   },
   {
     title: "Backend Developer Trainee",
@@ -31,6 +39,10 @@ const experiences = [
       "Collaborated with peers on code reviews and problem solving",
     ],
     skills: ["Node.js", "Express.js", "MongoDB", "AWS S3", "Redis", "JWT", "REST APIs"],
+    achievements: [
+      { metric: "15+", description: "APIs developed" },
+      { metric: "40%", description: "Avg. performance improvement with Redis" }
+    ]
   },
   {
     title: "Sales Trainee",
@@ -44,6 +56,9 @@ const experiences = [
       "Analyzed market trends and competitor products",
     ],
     skills: ["Sales", "MS Office", "Public Speaking", "Networking", "Relationship Building"],
+    achievements: [
+      { metric: "20+", description: "Client relationships managed" }
+    ]
   },
 ];
 
@@ -65,7 +80,7 @@ const Experience = () => {
             <span className="text-portfolio-primary mono mr-2">03.</span> Professional Experience
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="space-y-8">
             {experiences.map((exp, index) => (
               <Card 
                 key={index}
@@ -75,33 +90,72 @@ const Experience = () => {
                 style={{ transitionDelay: `${index * 0.2}s` }}
               >
                 <CardHeader className="border-b border-gray-800 pb-4">
-                  <CardTitle className="text-xl text-white flex justify-between items-start">
-                    <span>{exp.title}</span>
-                    <span className="text-sm text-portfolio-primary mono">{exp.period}</span>
-                  </CardTitle>
-                  <CardDescription className="text-lg font-medium text-portfolio-primary">
-                    {exp.company}
-                  </CardDescription>
+                  <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
+                    <div>
+                      <CardTitle className="text-xl text-white">
+                        {exp.title}
+                      </CardTitle>
+                      <CardDescription className="text-lg font-medium text-portfolio-primary">
+                        {exp.company}
+                      </CardDescription>
+                    </div>
+                    <span className="text-sm text-portfolio-primary mono py-1 px-2 bg-portfolio-primary/10 rounded-md inline-flex items-center">
+                      {exp.period}
+                    </span>
+                  </div>
                 </CardHeader>
-                <CardContent className="pt-6">
-                  <ul className="space-y-2">
-                    {exp.description.map((item, i) => (
-                      <li key={i} className="flex items-start">
-                        <span className="text-portfolio-primary mr-2">▹</span>
-                        <span className="text-portfolio-text text-sm">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
+                
+                <CardContent className="pt-6 grid md:grid-cols-3 gap-6">
+                  <div className="md:col-span-2">
+                    <h4 className="text-white font-medium mb-3">Key Contributions</h4>
+                    <ul className="space-y-2">
+                      {exp.description.map((item, i) => (
+                        <li key={i} className="flex items-start">
+                          <span className="text-portfolio-primary mr-2">▹</span>
+                          <span className="text-portfolio-text text-sm">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  
+                  {exp.achievements && exp.achievements.length > 0 && (
+                    <div className="md:col-span-1">
+                      <h4 className="text-white font-medium mb-3">Key Metrics</h4>
+                      <div className="grid grid-cols-2 gap-3">
+                        {exp.achievements.map((achievement, i) => (
+                          <div key={i} className="bg-portfolio-dark/70 p-3 rounded-md border border-gray-800">
+                            <div className="text-xl md:text-2xl font-bold text-portfolio-primary">{achievement.metric}</div>
+                            <div className="text-xs text-portfolio-text">{achievement.description}</div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </CardContent>
+                
                 <CardFooter className="flex flex-wrap gap-2 border-t border-gray-800 pt-4">
                   {exp.skills.map((skill, i) => (
-                    <span key={i} className="badge">
+                    <Badge key={i} variant="outline" className="bg-portfolio-primary/10 text-portfolio-primary border-portfolio-primary/20">
                       {skill}
-                    </span>
+                    </Badge>
                   ))}
                 </CardFooter>
               </Card>
             ))}
+          </div>
+          
+          <div className="mt-10 p-4 bg-portfolio-dark/70 border border-gray-800 rounded-lg">
+            <h3 className="text-white font-semibold mb-2 flex items-center">
+              <Link2 className="w-4 h-4 text-portfolio-primary mr-2" /> Professional Development
+            </h3>
+            <p className="text-portfolio-text text-sm">
+              Continuously improving technical skills through structured learning and practical application. 
+              Currently exploring advanced patterns in microservices architecture and deepening knowledge of AI integration in web applications.
+            </p>
+            <div className="flex items-center mt-3">
+              <ExternalLink className="w-4 h-4 text-portfolio-primary mr-2" />
+              <span className="text-sm text-portfolio-text">Open to collaboration on innovative projects</span>
+            </div>
           </div>
         </div>
       </div>
