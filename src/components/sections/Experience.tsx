@@ -5,6 +5,21 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 const experiences = [
   {
+    title: "Software Developer",
+    company: "SoftSensor.ai",
+    period: "Feb 2023 - Present",
+    description: [
+      "Led MERN stack development for LMDmax's fleet management systems (PMRS and Payroll Project), driving operational efficiency improvements of 30%",
+      "Architected and implemented real-time communication features using Twilio Chat API, reducing response times by 45%",
+      "Engineered comprehensive dashboards with data visualization for critical KPIs, enabling data-driven decision making",
+      "Developed automated report generation systems with customizable parameters, saving 20+ hours of manual work weekly",
+      "Designed and optimized MongoDB database schema for the MMD project, resulting in 35% improved query performance",
+      "Integrated AI tools (ChatGPT, Claude) into development workflow to enhance productivity and automate routine tasks",
+      "Implemented OAuth 2.0 and JWT for secure authentication, improving system security and user experience",
+    ],
+    skills: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js", "Twilio API", "JWT", "Data Visualization", "AI Integration", "Database Design"],
+  },
+  {
     title: "Backend Developer Trainee",
     company: "FunctionUp",
     period: "Oct 2022 - May 2023",
