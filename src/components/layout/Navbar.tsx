@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import { Menu, X, Github, Linkedin, FileText } from "lucide-react";
@@ -67,7 +68,7 @@ const Navbar = () => {
           </ul>
 
           <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10">
-            <a href="https://bit.ly/3WLyKq" target="_blank" rel="noopener noreferrer">
+            <a href="https://bit.ly/3WL5tvd" target="_blank" rel="noopener noreferrer">
               <FileText className="w-4 h-4 mr-2" /> Resume
             </a>
           </Button>
@@ -119,7 +120,7 @@ const Navbar = () => {
                 <Github />
               </a>
               <a
-                href="https://bit.ly/3WLyKq"
+                href="https://bit.ly/3WL5tvd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-portfolio-text hover:text-portfolio-primary p-2"
@@ -127,7 +128,7 @@ const Navbar = () => {
                 <Linkedin />
               </a>
               <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10">
-                <a href="https://bit.ly/3WLyKq" target="_blank" rel="noopener noreferrer">
+                <a href="https://bit.ly/3WL5tvd" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-4 h-4 mr-2" /> Resume
                 </a>
               </Button>

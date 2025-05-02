@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, ArrowRight } from "lucide-react";
@@ -108,7 +109,7 @@ const Hero = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://bit.ly/3WLyKq"
+                href="https://bit.ly/3WL5tvd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-portfolio-text hover:text-portfolio-primary transition-colors"

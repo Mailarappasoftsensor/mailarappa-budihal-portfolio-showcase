@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
@@ -43,7 +44,7 @@ const Contact = () => {
             </a>
             
             <a 
-              href="https://bit.ly/3WLyKq" 
+              href="https://bit.ly/3WL5tvd" 
               target="_blank" 
               rel="noopener noreferrer"
               className="contact-link flex flex-col items-center text-portfolio-text"
