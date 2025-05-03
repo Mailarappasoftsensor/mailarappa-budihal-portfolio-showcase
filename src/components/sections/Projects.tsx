@@ -11,7 +11,7 @@ const projects = [
     description:
       "Creating merged AI portraits by training models with 20 images of each person to generate high-quality fusion images.",
     problem: "Creating realistic merged portraits of two individuals requires complex AI techniques and careful dataset preparation.",
-    solution: "Trained AI models with carefully curated datasets of 20 images per person, optimizing for quality and realistic fusion results.",
+    solution: "Trained Flux LoRa AI models with carefully curated datasets of 20 images per person, optimizing for quality and realistic fusion results.",
     tech: ["ComfyUI", "LoRA Training", "ControlNet", "Stable Diffusion", "Image Processing"],
     github: "https://github.com/Mailarappa-Budihal",
     demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc",
@@ -35,7 +35,7 @@ const projects = [
     problem: "E-commerce platforms need robust product management systems that handle large catalogs while providing fast search and efficient image storage.",
     solution: "Implemented a RESTful API using Node.js and Express with JWT authentication, MongoDB for data storage, and AWS S3 for image optimization.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "AWS S3", "JWT"],
-    github: "https://github.com/Mailarappa-Budihal",
+    github: "https://github.com/Mailarappa-Budihal/project-5-Shoping-cart",
     demo: "#",
     image: "https://placehold.co/600x400/0a192f/64ffda?text=E-commerce+API"
   },
@@ -46,7 +46,7 @@ const projects = [
     problem: "Long URLs are difficult to share and remember. Existing solutions lack detailed analytics and caching for high-traffic scenarios.",
     solution: "Built a system that generates short, unique URLs with Redis caching to handle high traffic loads and MongoDB for persistent storage.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "Redis"],
-    github: "https://github.com/Mailarappa-Budihal",
+    github: "https://github.com/Mailarappa-Budihal/project-4-UrlShortner-own",
     demo: "#",
     image: "https://placehold.co/600x400/0a192f/64ffda?text=URL+Shortener"
   },
