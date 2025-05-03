@@ -1,0 +1,135 @@
+.skill-progress {
+  height: 4px;
+  background-color: rgba(10, 25, 47, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: var(--portfolio-primary);
+  transition: width 0.5s ease;
+}
+
+.skill-container {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.skill-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-category {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.skill-category.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-category {
+  background-color: rgba(10, 25, 47, 0.3);
+  border: 1px solid rgba(128, 128, 128, 0.2);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  opacity: 1;
+  border-color: var(--portfolio-primary);
+  box-shadow: 0 4px 12px rgba(100, 255, 218, 0.1);
+}
+
+.skill-category-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-category-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--portfolio-primary);
+}
+
+.skill-bar {
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
+  font-size: 0.875rem;
+  color: var(--portfolio-text);
+}
+
+.skill-level {
+  font-size: 0.75rem;
+  color: var(--portfolio-primary);
+}
+
+.skill-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skill-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-container.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.skill-category-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-category-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--portfolio-primary);
+}
+
+.skill-bar {
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
+  font-size: 0.875rem;
+  color: var(--portfolio-text);
+}
+
+.skill-level {
+  font-size: 0.75rem;
+  color: var(--portfolio-primary);
+}
+
+.skill-container {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skill-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.skill-container.fade-out {
+  opacity: 0;
+  transform: translateY(10px);
+}

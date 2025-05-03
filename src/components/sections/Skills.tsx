@@ -9,7 +9,7 @@ interface Skill {
 
 const skillCategories = [
   {
-    title: "Generative AI ",
+    title: "Generative AI",
     skills: [
       { name: "ComfyUI Workflow Building", level: 95 },
       { name: "Jarvis Labs Integration", level: 90 },
@@ -32,9 +32,9 @@ const skillCategories = [
       { name: "React.js", level: 60 },
       { name: "TypeScript", level: 75 },
       { name: "HTML/CSS", level: 80 },
-      { name: "SQl", level: 80 },
+      { name: "SQL", level: 80 },
       { name: "Python", level: 40 },
-      { name: "Postgres sql", level: 80 },
+      { name: "PostgreSQL", level: 80 },
     ],
   },
   {
@@ -47,15 +47,32 @@ const skillCategories = [
 ];
 
 const SkillBar = ({ skill, inView, index }: { skill: Skill; inView: boolean; index: number }) => {
+  const getSkillRange = (level: number) => {
+    if (level >= 90) return 'Expert';
+    if (level >= 75) return 'Advanced';
+    if (level >= 60) return 'Intermediate';
+    return 'Beginner';
+  };
+
+  const getRangeColor = (level: number) => {
+    if (level >= 90) return 'bg-portfolio-primary';
+    if (level >= 75) return 'bg-portfolio-primary/80';
+    if (level >= 60) return 'bg-portfolio-primary/60';
+    return 'bg-portfolio-primary/40';
+  };
+
   return (
     <div className="mb-6">
       <div className="flex justify-between items-center mb-1">
         <span className="font-medium text-sm md:text-base text-white">{skill.name}</span>
-        <span className="text-xs mono text-portfolio-primary">{skill.level}%</span>
+        <div className="flex items-center space-x-2">
+          <span className="text-xs mono text-portfolio-primary">{skill.level}%</span>
+          <span className={`text-xs text-portfolio-primary/60`}>{getSkillRange(skill.level)}</span>
+        </div>
       </div>
-      <div className="skill-progress">
+      <div className="relative h-2.5 bg-gray-800 rounded-full">
         <div
-          className={inView ? "progress-fill" : "w-0"}
+          className={`absolute inset-0 ${getRangeColor(skill.level)} rounded-full transform transition-all duration-300 ${inView ? 'visible' : ''}`}
           style={{
             width: `${skill.level}%`,
             transitionDelay: `${0.2 + index * 0.1}s`,
@@ -77,28 +94,23 @@ const Skills = () => {
       <div className="container mx-auto px-4">
         <div
           ref={ref}
-          className="skill-container"
-          style={{
-            opacity: inView ? 1 : 0,
-            transform: inView ? "translateY(0)" : "translateY(10px)",
-            transitionDelay: "0.2s",
-          }}
+          className={`skill-container ${inView ? 'visible' : ''}`}
         >
-          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12 relative inline-block">
-            <span className="relative z-10">Technical Skills</span>
-            <span className="absolute bottom-0 left-0 w-full h-1 bg-portfolio-primary/30"></span>
           <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
             <span className="text-portfolio-primary mono mr-2"></span> Technical Skills
           </h2>
+          <p className="text-portfolio-text text-sm mb-8">
+            My skills are categorized into ranges: Expert (90-100%), Advanced (75-89%), Intermediate (60-74%), and Beginner (0-59%)
+          </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, catIndex) => (
               <div
                 key={catIndex}
-                className={`bg-portfolio-dark/50 border border-gray-800 rounded-lg p-6 shadow-lg transform transition-all ${
-                  inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                }`}
-                style={{ transitionDelay: `${catIndex * 0.2}s` }}
+                className={`skill-category ${inView ? 'visible' : ''}`}
+                style={{
+                  transitionDelay: `${catIndex * 0.2}s`,
+                }}
               >
                 <h3 className="text-xl font-semibold mb-6 text-portfolio-primary flex items-center">
                   <span className="w-2 h-2 bg-portfolio-primary mr-2 rounded-full"></span>

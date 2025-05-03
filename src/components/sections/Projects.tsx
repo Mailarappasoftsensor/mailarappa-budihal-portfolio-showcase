@@ -14,7 +14,7 @@ const projects = [
     solution: "Developed a custom LoRA training pipeline with 20 images per subject, implemented ControlNets for feature preservation, and created a seamless fusion algorithm.",
     tech: ["Python", "LoRA Training", "ControlNets", "ComfyUI", "Image Processing","Jupyter Notebook","JarvisLabs"],
     demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc",
-    image: "https://drive.google.com/file/d/1qLmK4Wq3nLntwzhNGXbasKzowENB66t9/view?usp=sharing"
+    image: "https://drive.google.com/uc?export=view&id=1A97xGIbZdwYMpSFJ-EiCp4SrNbAW0Mba"
   },
   {
     title: "TestCraft Pro: Enterprise Test Generator",
@@ -25,7 +25,7 @@ const projects = [
     tech: ["Python", "Gradio", "GroqCloud", "NLP", "Code Analysis", "Test Automation"],
     github: "https://huggingface.co/spaces/MailarappaBudihal/TestcaseGenerator",
     demo: "https://huggingface.co/spaces/MailarappaBudihal/TestcaseGenerator",
-    image: "https://drive.google.com/file/d/1GKy3wu4yKC0ZyxTIKBREamNsdY22PB_m/view?usp=sharing"
+    image: "https://drive.google.com/uc?export=view&id=1GKy3wu4yKC0ZyxTIKBREamNsdY22PB_m"
   },
   {
     title: "E-commerce Product Management",
@@ -68,7 +68,7 @@ const Projects = () => {
             <span className="text-portfolio-primary mono mr-2"></span> Projects
           </h2>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
               <Card
                 key={index}
@@ -76,12 +76,13 @@ const Projects = () => {
                   inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${index * 0.1}s` }}
+                data-index={index % 4}
               >
-                <div className="h-48 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover transform hover:scale-110 transition duration-500"
+                    className="absolute inset-0 w-full h-full object-cover transform hover:scale-110 transition duration-500"
                   />
                 </div>
                 <CardHeader className="pb-2">

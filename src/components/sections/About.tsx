@@ -20,8 +20,8 @@ const About = () => {
             <span className="text-portfolio-primary mono mr-2"></span> About Me
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-10">
-            <div className="md:col-span-2">
+          <div className="grid md:grid-cols-1 gap-10">
+            <div>
               <p className="text-portfolio-text mb-4">
                 Hello! I'm Mailarappa Budihal, a passionate Generative AI engineer and Software Developer specializing in Applied generative AI . 
                 My journey in technology began during my agriculture studies, where I discovered programming could solve real-world 
@@ -43,53 +43,91 @@ const About = () => {
               </div>
               
               <p className="text-portfolio-text mb-6">
-                I specialize in developing AI solutions that solve real-world problems, from image generation and processing 
-                to automated test case generation. My unique background in agriculture combined with my AI expertise allows me 
-                to approach problems from a unique perspective, always focusing on practical, scalable solutions.
+                I'm a versatile developer with expertise in backend development and generative AI. I build secure, scalable API solutions using Node.js and MongoDB, while also creating advanced AI workflows with ComfyUI, training LoRA models, and implementing image generation systems. I specialize in building cutting-edge AI solutions and generative models. From custom LoRA training to advanced image generation, I transform complex AI challenges into practical, scalable applications using Python, ComfyUI, JarvisLabs and the latest AI frameworks.
               </p>
 
-              <p className="text-portfolio-text">
-                Here are some technologies I've been working with recently:
-              </p>
+              <div className="mb-8">
+                <h3 className="text-portfolio-primary font-semibold mb-4">Core Expertise:</h3>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">Generative AI Development</span>
+                    <span className="text-portfolio-primary">95%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "95%" }}></div>
+                  </div>
+                </div>
 
-              <div className="grid grid-cols-2 gap-2 mt-4">
-                <div className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-portfolio-primary mr-2"></div>
-                  <span className="mono text-sm">Python</span>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">Database Design & Optimization</span>
+                    <span className="text-portfolio-primary">90%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "90%" }}></div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-portfolio-primary mr-2"></div>
-                  <span className="mono text-sm">ComfyUI</span>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">Authentication Systems</span>
+                    <span className="text-portfolio-primary">85%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "85%" }}></div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-portfolio-primary mr-2"></div>
-                  <span className="mono text-sm">Jarvis Labs</span>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">Cloud Services Integration</span>
+                    <span className="text-portfolio-primary">88%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "88%" }}></div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-portfolio-primary mr-2"></div>
-                  <span className="mono text-sm">LoRA Training</span>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">ComfyUI Workflow Building</span>
+                    <span className="text-portfolio-primary">92%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "92%" }}></div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-portfolio-primary mr-2"></div>
-                  <span className="mono text-sm">ControlNets</span>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">LoRA Model Training</span>
+                    <span className="text-portfolio-primary">90%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "90%" }}></div>
+                  </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-1.5 h-1.5 bg-portfolio-primary mr-2"></div>
-                  <span className="mono text-sm">Gradio</span>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">Image Generation Pipelines</span>
+                    <span className="text-portfolio-primary">89%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "89%" }}></div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-portfolio-text">AI Model Fine-tuning</span>
+                    <span className="text-portfolio-primary">92%</span>
+                  </div>
+                  <div className="w-full bg-gray-800 rounded-full h-2.5">
+                    <div className="bg-portfolio-primary h-2.5 rounded-full" style={{ width: "92%" }}></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <div className="relative group">
-              <div className="relative z-10 border-2 border-portfolio-primary rounded-md overflow-hidden">
-                <div className="absolute inset-0 bg-portfolio-primary opacity-20 group-hover:opacity-10 transition-opacity"></div>
-                <img 
-                  src="/lovable-uploads/48d5e614-364e-4a28-a1bd-a7b0b86471ce.png" 
-                  alt="Mailarappa Budihal" 
-                  className="mix-blend-multiply filter grayscale hover:filter-none transition-all w-full"
-                />
-              </div>
-              <div className="absolute -bottom-4 -right-4 border-2 border-portfolio-primary h-full w-full rounded-md z-0 group-hover:-bottom-2 group-hover:-right-2 transition-all duration-300"></div>
             </div>
           </div>
         </div>
