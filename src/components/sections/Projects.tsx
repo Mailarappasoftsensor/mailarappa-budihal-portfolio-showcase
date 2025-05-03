@@ -7,15 +7,35 @@ import { Button } from "@/components/ui/button";
 
 const projects = [
   {
+    title: "Dual Character Fusion AI Portrait Generator",
+    description:
+      "A groundbreaking AI system that generates unique portraits by fusing characteristics from two different subjects.",
+    problem: "Creating realistic AI-generated portraits that combine features from multiple subjects is challenging and requires extensive data preparation.",
+    solution: "Developed a custom LoRA training pipeline with 20 images per subject, implemented ControlNets for feature preservation, and created a seamless fusion algorithm.",
+    tech: ["Python", "LoRA Training", "ControlNets", "ComfyUI", "Image Processing","Jupyter Notebook","JarvisLabs"],
+    demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc",
+    image: "https://drive.google.com/file/d/1qLmK4Wq3nLntwzhNGXbasKzowENB66t9/view?usp=sharing"
+  },
+  {
+    title: "TestCraft Pro: Enterprise Test Generator",
+    description:
+      "An intelligent test case generation system that automates the creation of comprehensive test cases for software development.",
+    problem: "Manual test case creation is time-consuming and prone to human error in large-scale development projects.",
+    solution: "Built a Gradio-based frontend with GroqCloud LLM backend that generates detailed test cases based on code analysis and requirements.",
+    tech: ["Python", "Gradio", "GroqCloud", "NLP", "Code Analysis", "Test Automation"],
+    github: "https://huggingface.co/spaces/MailarappaBudihal/TestcaseGenerator",
+    demo: "https://huggingface.co/spaces/MailarappaBudihal/TestcaseGenerator",
+    image: "https://drive.google.com/file/d/1GKy3wu4yKC0ZyxTIKBREamNsdY22PB_m/view?usp=sharing"
+  },
+  {
     title: "E-commerce Product Management",
     description:
       "A comprehensive backend system for managing e-commerce products with user authentication, product catalog, and image handling.",
     problem: "E-commerce platforms need robust product management systems that handle large catalogs while providing fast search and efficient image storage.",
     solution: "Implemented a RESTful API using Node.js and Express with JWT authentication, MongoDB for data storage, and AWS S3 for image optimization.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "AWS S3", "JWT"],
-    github: "https://github.com/Mailarappa-Budihal",
-    demo: "#",
-    image: "https://placehold.co/600x400/0a192f/64ffda?text=E-commerce+API"
+    github: "https://github.com/Mailarappa-Budihal/project-5-Shoping-cart",
+    image: "https://img.freepik.com/free-photo/discount-shopping-season-with-sale_23-2150165932.jpg?t=st=1746277375~exp=1746280975~hmac=ef121bf6b163a4e5daa19e25b65aed71ace5a353cd73706f23585671c730abd8&w=996"
   },
   {
     title: "URL Shortener",
@@ -24,43 +44,10 @@ const projects = [
     problem: "Long URLs are difficult to share and remember. Existing solutions lack detailed analytics and caching for high-traffic scenarios.",
     solution: "Built a system that generates short, unique URLs with Redis caching to handle high traffic loads and MongoDB for persistent storage.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "Redis"],
-    github: "https://github.com/Mailarappa-Budihal",
-    demo: "#",
-    image: "https://placehold.co/600x400/0a192f/64ffda?text=URL+Shortener"
-  },
-  {
-    title: "Book Management",
-    description:
-      "A RESTful API for managing books with features like user authentication, authorization, CRUD operations, and AWS S3 integration.",
-    problem: "Libraries and book retailers need systems to efficiently manage their inventory with user access controls and cloud storage for cover images.",
-    solution: "Developed an API with role-based access control, MongoDB for book metadata, and AWS S3 integration for storing and retrieving book covers.",
-    tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "AWS S3", "JWT"],
-    github: "https://github.com/Mailarappa-Budihal",
-    demo: "#",
-    image: "https://placehold.co/600x400/0a192f/64ffda?text=Book+Management"
-  },
-  {
-    title: "Infinite Scrolling",
-    description:
-      "A product listing application with infinite scrolling functionality to dynamically load products as the user scrolls down.",
-    problem: "Traditional pagination disrupts user experience. Loading all products at once impacts performance with large datasets.",
-    solution: "Implemented server-side pagination with cursor-based approach and frontend infinite scroll for seamless data loading.",
-    tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "InfiniteScroll"],
-    github: "https://github.com/Mailarappa-Budihal",
-    demo: "#",
-    image: "https://placehold.co/600x400/0a192f/64ffda?text=Infinite+Scroll"
-  },
-  {
-    title: "Blog Management",
-    description:
-      "A blog platform with user authentication, blog post creation, editing, and commenting functionality.",
-    problem: "Content creators need platforms that allow easy content management with user engagement features.",
-    solution: "Created a RESTful API with user authentication, rich text editing capabilities, and a comment system with moderation features.",
-    tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "JWT"],
-    github: "https://github.com/Mailarappa-Budihal",
-    demo: "#",
-    image: "https://placehold.co/600x400/0a192f/64ffda?text=Blog+Management"
+    github: "https://github.com/Mailarappa-Budihal/project-4-UrlShortner-own",
+    image: "https://www.bulkgate.com/wp-content/uploads/2022/05/blog-url-shortener.jpg"
   }
+
 ];
 
 const Projects = () => {
@@ -78,7 +65,7 @@ const Projects = () => {
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
           <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
-            <span className="text-portfolio-primary mono mr-2">04.</span> Projects
+            <span className="text-portfolio-primary mono mr-2"></span> Projects
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

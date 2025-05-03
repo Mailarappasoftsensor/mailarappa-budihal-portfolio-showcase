@@ -62,7 +62,7 @@ const Navbar = () => {
                   offset={-100}
                   className="nav-link cursor-pointer font-medium"
                 >
-                  <span className="text-portfolio-primary mono mr-1">{`0${index + 1}.`}</span> {item.name}
+                  {item.name}
                 </Link>
               </li>
             ))}

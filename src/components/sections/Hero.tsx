@@ -57,7 +57,7 @@ const Hero = () => {
             }`}
             style={{ animationDelay: "0.6s" }}
           >
-            I build robust backend solutions.
+            Generative AI Engineer & Software Developer
           </h2>
           
           <div 
@@ -67,13 +67,10 @@ const Hero = () => {
             style={{ animationDelay: "0.8s" }}
           >
             <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm mr-3 mb-3">
-              Backend Developer
-            </div>
-            <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm mr-3 mb-3">
-              FunctionUp Certified
+              Generative AI Specialist
             </div>
             <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm mb-3">
-              ELSA Score: Outstanding
+              Generative AI
             </div>
           </div>
           
@@ -83,8 +80,8 @@ const Hero = () => {
             }`}
             style={{ animationDelay: "1s" }}
           >
-            I'm a specialized backend developer focused on building secure, scalable API solutions and efficient database systems. 
-            I transform complex requirements into reliable server-side architectures using Node.js, Express, and MongoDB.
+            I specialize in building cutting-edge AI solutions and generative models. From custom LoRA training to advanced image generation, 
+            I transform complex AI challenges into practical, scalable applications using Python,ComfyUI, JarvisLabs and the latest AI frameworks.
           </p>
 
           <div 
@@ -96,7 +93,7 @@ const Hero = () => {
             <h3 className="text-portfolio-primary font-semibold mb-2">Core Expertise:</h3>
             <ul className="grid grid-cols-2 gap-2">
               <li className="flex items-center text-sm text-portfolio-text">
-                <span className="text-portfolio-primary mr-2">►</span> RESTful API Development
+                <span className="text-portfolio-primary mr-2">►</span> Generative AI Development
               </li>
               <li className="flex items-center text-sm text-portfolio-text">
                 <span className="text-portfolio-primary mr-2">►</span> Database Design & Optimization

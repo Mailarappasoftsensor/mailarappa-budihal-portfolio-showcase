@@ -13,15 +13,15 @@ const testimonials = [
   },
   {
     text: "Working with Mailarappa was a pleasure. His deep knowledge of Node.js and MongoDB helped us optimize our database operations and improve overall application performance.",
-    name: "Priya Patel",
-    position: "Project Manager",
-    company: "TechSolutions"
+    name: "Anubhav Guha",
+    position: "Software Engineer",
+    company: "Softsensor.ai"
   },
   {
     text: "Mailarappa's dedication to writing clean, maintainable code is impressive. He consistently delivered high-quality work and was always willing to help team members.",
-    name: "Amit Verma",
+    name: "Ashit Choudary",
     position: "Tech Lead",
-    company: "WebInnovate"
+    company: "Softsensor.ai"
   }
 ];
 
@@ -40,7 +40,7 @@ const Testimonials = () => {
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
           <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
-            <span className="text-portfolio-primary mono mr-2">06.</span> Testimonials
+            <span className="text-portfolio-primary mono mr-2"></span> Testimonials
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6">

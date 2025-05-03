@@ -9,28 +9,39 @@ interface Skill {
 
 const skillCategories = [
   {
-    title: "Programming Languages & Core Technologies",
+    title: "Generative AI ",
+    skills: [
+      { name: "ComfyUI Workflow Building", level: 95 },
+      { name: "Jarvis Labs Integration", level: 90 },
+      { name: "LoRA Model Training", level: 92 },
+      { name: "ControlNets Implementation", level: 88 },
+      { name: "Image Generation Techniques", level: 90 },
+      { name: "IP Adapters Development", level: 85 },
+      { name: "Flux Model Generation", level: 88 },
+      { name: "Text-to-Image Workflows", level: 92 },
+      { name: "Image-to-Image Workflows", level: 89 },
+    ],
+  },
+  {
+    title: "Programming & Development",
     skills: [
       { name: "JavaScript", level: 90 },
       { name: "Node.js", level: 85 },
       { name: "Express.js", level: 90 },
       { name: "MongoDB", level: 85 },
+      { name: "React.js", level: 60 },
+      { name: "TypeScript", level: 75 },
+      { name: "HTML/CSS", level: 80 },
+      { name: "SQl", level: 80 },
+      { name: "Python", level: 40 },
+      { name: "Postgres sql", level: 80 },
     ],
   },
   {
-    title: "Cloud & Database",
+    title: "Cloud & Infrastructure",
     skills: [
-      { name: "AWS S3", level: 75 },
-      { name: "Redis", level: 70 },
-      { name: "SQL", level: 65 },
-    ],
-  },
-  {
-    title: "Concepts & Design",
-    skills: [
-      { name: "Data Structures", level: 80 },
-      { name: "Algorithms", level: 75 },
-      { name: "REST APIs", level: 90 },
+      { name: "AWS S3", level: 80 },
+      { name: "Docker", level: 85 }
     ],
   },
 ];
@@ -75,7 +86,7 @@ const Skills = () => {
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
           <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
-            <span className="text-portfolio-primary mono mr-2">02.</span> Technical Skills
+            <span className="text-portfolio-primary mono mr-2"></span> Technical Skills
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
