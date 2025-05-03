@@ -14,7 +14,7 @@ const projects = [
     solution: "Trained Flux LoRa AI models with carefully curated datasets of 20 images per person, optimizing for quality and realistic fusion results.",
     tech: ["ComfyUI", "LoRA Training", "ControlNet", "Stable Diffusion", "Image Processing"],
     github: "https://github.com/Mailarappa-Budihal",
-    demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc",
+    demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc?pvs=4#1db81a2d58e180b69663fdad2448e65a",
     image: "https://placehold.co/600x400/0a192f/64ffda?text=AI+Portrait+Fusion"
   },
   {
