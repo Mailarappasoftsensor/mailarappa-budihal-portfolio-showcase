@@ -21,7 +21,7 @@ const Hero = () => {
         <div className="particles-container"></div>
 
         <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center gap-8 text-center">
+          <div className="flex flex-col gap-8">
             <div
               className={`opacity-0 ${mounted ? "animate-fade-in" : ""} delay-100`}
             >
@@ -31,9 +31,9 @@ const Hero = () => {
               </Avatar>
             </div>
 
-            <div className="text-center">
+            <div className="space-y-6">
               <p
-                className={`mono text-portfolio-primary mb-5 text-lg opacity-0 ${mounted ? "animate-fade-in" : ""} delay-200`}
+                className={`mono text-portfolio-primary mb-2 text-lg opacity-0 ${mounted ? "animate-fade-in" : ""} delay-200`}
               >
                 Hi, my name is
               </p>
@@ -50,30 +50,36 @@ const Hero = () => {
                 Generative AI Engineer & Software Developer
               </h2>
 
-              <div className="flex flex-wrap justify-center mb-6">
-                <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm mr-3 mb-3 hover:bg-portfolio-primary/30 transition-colors duration-300">
+              <div className="flex flex-wrap gap-3 mb-6">
+                <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm hover:bg-portfolio-primary/30 transition-colors duration-300">
                   Generative AI Specialist
                 </div>
-                <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm mr-3 mb-3 hover:bg-portfolio-primary/30 transition-colors duration-300">
+                <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm hover:bg-portfolio-primary/30 transition-colors duration-300">
                   ELSA Score: Outstanding
                 </div>
-                <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm mr-3 mb-3">
+                <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm">
                   Generative AI
                 </div>
               </div>
 
-              <p
-                className={`text-lg text-portfolio-text mb-8 max-w-2xl opacity-0 ${mounted ? "animate-fade-in" : ""} delay-1000`}
-              >
-                I'm a versatile developer with expertise in backend development and generative AI. I build secure,
-                scalable API solutions using Node.js and MongoDB, while also creating advanced AI workflows with
-                ComfyUI, training LoRA models, and implementing image generation systems.
-                I specialize in building cutting-edge AI solutions and generative models. From custom LoRA training to advanced image generation, 
-                I transform complex AI challenges into practical, scalable applications using Python,ComfyUI, JarvisLabs and the latest AI frameworks.
-              </p>
+              <div className="space-y-4">
+                <p
+                  className={`text-lg text-portfolio-text opacity-0 ${mounted ? "animate-fade-in" : ""} delay-1000`}
+                >
+                  I'm a versatile developer with expertise in backend development and generative AI. I build secure,
+                  scalable API solutions using Node.js and MongoDB, while also creating advanced AI workflows with
+                  ComfyUI, training LoRA models, and implementing image generation systems.
+                </p>
+                <p
+                  className={`text-lg text-portfolio-text opacity-0 ${mounted ? "animate-fade-in" : ""} delay-1100`}
+                >
+                  I specialize in building cutting-edge AI solutions and generative models. From custom LoRA training to advanced image generation, 
+                  I transform complex AI challenges into practical, scalable applications using Python,ComfyUI, JarvisLabs and the latest AI frameworks.
+                </p>
+              </div>
 
               <div
-                className={`flex flex-wrap justify-center gap-4 opacity-0 ${mounted ? "animate-fade-in" : ""} delay-1200`}
+                className={`flex flex-wrap gap-4 opacity-0 ${mounted ? "animate-fade-in" : ""} delay-1200`}
               >
                 <Button asChild className="bg-transparent border border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 hover:scale-105 transition-all duration-300 shadow-md hover:shadow-portfolio-primary/20">
                   <Link to="projects" smooth={true} duration={500} offset={-100}>
