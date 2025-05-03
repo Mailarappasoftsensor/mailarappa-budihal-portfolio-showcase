@@ -33,6 +33,24 @@ const skillCategories = [
       { name: "REST APIs", level: 90 },
     ],
   },
+  {
+    title: "Generative AI",
+    skills: [
+      { name: "ComfyUI Workflow Building", level: 85 },
+      { name: "LoRA Model Training", level: 80 },
+      { name: "ControlNets", level: 75 },
+      { name: "Text-to-Image Generation", level: 85 },
+    ],
+  },
+  {
+    title: "AI Tools & Techniques",
+    skills: [
+      { name: "Image-to-Image Workflow", level: 80 },
+      { name: "IPT Adapters", level: 75 },
+      { name: "Flux Model Image Generation", level: 70 },
+      { name: "Jarvis Labs", level: 85 },
+    ],
+  },
 ];
 
 const SkillBar = ({ skill, inView, index }: { skill: Skill; inView: boolean; index: number }) => {
@@ -74,20 +92,24 @@ const Skills = () => {
           className={`section ${inView ? "animate-slide-up" : ""}`}
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
-          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
-            <span className="text-portfolio-primary mono mr-2">02.</span> Technical Skills
+          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12 relative inline-block">
+            <span className="relative z-10">Technical Skills</span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-portfolio-primary/30"></span>
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, catIndex) => (
-              <div 
+              <div
                 key={catIndex}
-                className={`bg-portfolio-dark/50 border border-gray-800 rounded-lg p-6 shadow-lg transform transition-all ${
+                className={`bg-portfolio-dark/50 border border-gray-800 rounded-lg p-6 shadow-lg transform transition-all hover:shadow-portfolio-primary/10 hover:border-portfolio-primary/30 hover:translate-y-[-5px] ${
                   inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${catIndex * 0.2}s` }}
               >
-                <h3 className="text-xl font-semibold mb-6 text-portfolio-primary">{category.title}</h3>
+                <h3 className="text-xl font-semibold mb-6 text-portfolio-primary flex items-center">
+                  <span className="w-2 h-2 bg-portfolio-primary mr-2 rounded-full"></span>
+                  {category.title}
+                </h3>
                 <div>
                   {category.skills.map((skill, index) => (
                     <SkillBar key={index} skill={skill} inView={inView} index={index} />

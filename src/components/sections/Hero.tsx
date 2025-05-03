@@ -13,15 +13,15 @@ const Hero = () => {
   }, []);
 
   return (
-    <section 
-      id="hero" 
+    <section
+      id="hero"
       className="min-h-screen flex flex-col justify-center relative pt-20"
     >
       <div className="particles-container"></div>
-      
+
       <div className="container mx-auto px-4">
         <div className="max-w-3xl">
-          <div 
+          <div
             className={`mb-8 opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
@@ -33,7 +33,7 @@ const Hero = () => {
             </Avatar>
           </div>
 
-          <p 
+          <p
             className={`mono text-portfolio-primary mb-5 text-lg opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
@@ -41,8 +41,8 @@ const Hero = () => {
           >
             Hi, my name is
           </p>
-          
-          <h1 
+
+          <h1
             className={`text-4xl md:text-6xl lg:text-7xl font-bold mb-4 opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
@@ -50,84 +50,103 @@ const Hero = () => {
           >
             Mailarappa Budihal.
           </h1>
-          
-          <h2 
+
+          <h2
             className={`text-3xl md:text-5xl lg:text-6xl font-bold text-portfolio-text mb-6 opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
             style={{ animationDelay: "0.6s" }}
           >
-            I build robust backend solutions.
+            I build robust solutions & <span className="text-portfolio-primary">AI models</span>.
           </h2>
-          
-          <div 
+
+          <div
             className={`flex flex-wrap items-center mb-6 opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
             style={{ animationDelay: "0.8s" }}
           >
-            <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm mr-3 mb-3">
+            <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm mr-3 mb-3 hover:bg-portfolio-secondary/30 transition-colors duration-300">
               Backend Developer
             </div>
-            <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm mr-3 mb-3">
+            <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm mr-3 mb-3 hover:bg-portfolio-primary/30 transition-colors duration-300">
+              Generative AI Specialist
+            </div>
+            <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm mr-3 mb-3 hover:bg-portfolio-secondary/30 transition-colors duration-300">
               FunctionUp Certified
             </div>
-            <div className="bg-portfolio-secondary/20 text-white py-1 px-3 rounded-full text-sm mb-3">
+            <div className="bg-portfolio-primary/20 text-portfolio-primary py-1 px-3 rounded-full text-sm mb-3 hover:bg-portfolio-primary/30 transition-colors duration-300">
               ELSA Score: Outstanding
             </div>
           </div>
-          
-          <p 
+
+          <p
             className={`text-lg text-portfolio-text mb-8 max-w-xl opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
             style={{ animationDelay: "1s" }}
           >
-            I'm a specialized backend developer focused on building secure, scalable API solutions and efficient database systems. 
-            I transform complex requirements into reliable server-side architectures using Node.js, Express, and MongoDB.
+            I'm a versatile developer with expertise in backend development and generative AI. I build secure,
+            scalable API solutions using Node.js and MongoDB, while also creating advanced AI workflows with
+            ComfyUI, training LoRA models, and implementing image generation systems.
           </p>
 
-          <div 
+          <div
             className={`mb-8 opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
             style={{ animationDelay: "1.1s" }}
           >
-            <h3 className="text-portfolio-primary font-semibold mb-2">Core Expertise:</h3>
+            <h3 className="text-portfolio-primary font-semibold mb-2 relative inline-block">
+              <span className="relative z-10">Core Expertise:</span>
+              <span className="absolute bottom-0 left-0 w-full h-0.5 bg-portfolio-primary/30"></span>
+            </h3>
             <ul className="grid grid-cols-2 gap-2">
-              <li className="flex items-center text-sm text-portfolio-text">
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
                 <span className="text-portfolio-primary mr-2">►</span> RESTful API Development
               </li>
-              <li className="flex items-center text-sm text-portfolio-text">
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
                 <span className="text-portfolio-primary mr-2">►</span> Database Design & Optimization
               </li>
-              <li className="flex items-center text-sm text-portfolio-text">
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
                 <span className="text-portfolio-primary mr-2">►</span> Authentication Systems
               </li>
-              <li className="flex items-center text-sm text-portfolio-text">
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
                 <span className="text-portfolio-primary mr-2">►</span> Cloud Services Integration
+              </li>
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
+                <span className="text-portfolio-primary mr-2">►</span> ComfyUI Workflow Building
+              </li>
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
+                <span className="text-portfolio-primary mr-2">►</span> LoRA Model Training
+              </li>
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
+                <span className="text-portfolio-primary mr-2">►</span> Image Generation Pipelines
+              </li>
+              <li className="flex items-center text-sm text-portfolio-text hover:text-portfolio-primary transition-colors duration-300">
+                <span className="text-portfolio-primary mr-2">►</span> AI Model Fine-tuning
               </li>
             </ul>
           </div>
-          
-          <div 
+
+          <div
             className={`flex flex-wrap items-center gap-4 opacity-0 ${
               mounted ? "animate-fade-in" : ""
             }`}
             style={{ animationDelay: "1.2s" }}
           >
-            <Button asChild className="bg-transparent border border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10">
+            <Button asChild className="bg-transparent border border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 hover:scale-105 transition-all duration-300 shadow-md hover:shadow-portfolio-primary/20">
               <Link to="projects" smooth={true} duration={500} offset={-100}>
-                View my projects <ArrowRight className="ml-2 w-4 h-4" />
+                View my projects <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
               </Link>
             </Button>
-            
+
             <div className="flex items-center space-x-4 ml-2">
               <a
                 href="https://github.com/Mailarappa-Budihal"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-portfolio-text hover:text-portfolio-primary transition-colors"
+                className="text-portfolio-text hover:text-portfolio-primary transition-colors p-2 rounded-full hover:bg-portfolio-primary/10"
               >
                 <Github className="w-5 h-5" />
               </a>
@@ -135,7 +154,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/mailarappa-budihal-795291194/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-portfolio-text hover:text-portfolio-primary transition-colors"
+                className="text-portfolio-text hover:text-portfolio-primary transition-colors p-2 rounded-full hover:bg-portfolio-primary/10"
               >
                 <Linkedin className="w-5 h-5" />
               </a>

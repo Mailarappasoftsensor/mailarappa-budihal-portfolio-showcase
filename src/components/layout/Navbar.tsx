@@ -40,13 +40,16 @@ const Navbar = () => {
   return (
     <header
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-portfolio-dark/90 backdrop-blur-md py-3 shadow-lg" : "bg-transparent py-5"
+        scrolled
+          ? "bg-portfolio-dark/90 backdrop-blur-md py-3 shadow-lg border-b border-portfolio-primary/20"
+          : "bg-transparent py-5"
       }`}
     >
       <nav className="container mx-auto flex justify-between items-center px-4">
         <div className="text-portfolio-primary font-bold text-3xl">
-          <Link to="hero" smooth={true} duration={500} className="cursor-pointer">
-            MB
+          <Link to="hero" smooth={true} duration={500} className="cursor-pointer relative group">
+            <span className="relative z-10">MB</span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-portfolio-primary group-hover:w-full transition-all duration-300"></span>
           </Link>
         </div>
 
@@ -54,22 +57,23 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <ul className="flex space-x-8">
             {menuItems.map((item, index) => (
-              <li key={index} className="text-portfolio-text hover:text-portfolio-primary">
+              <li key={index} className="text-portfolio-text">
                 <Link
                   to={item.to}
                   smooth={true}
                   duration={500}
                   offset={-100}
-                  className="nav-link cursor-pointer font-medium"
+                  className="nav-link cursor-pointer font-medium relative group"
                 >
-                  <span className="text-portfolio-primary mono mr-1">{`0${index + 1}.`}</span> {item.name}
+                  <span className="relative z-10 hover:text-portfolio-primary transition-colors duration-300">{item.name}</span>
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-portfolio-primary group-hover:w-full transition-all duration-300"></span>
                 </Link>
               </li>
             ))}
           </ul>
 
-          <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10">
-            <a href="https://www.linkedin.com/in/mailarappa-budihal-795291194/" target="_blank" rel="noopener noreferrer">
+          <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 hover:scale-105 transition-all duration-300 shadow-md hover:shadow-portfolio-primary/20">
+            <a href="https://www.linkedin.com/in/mailarappa-budihal-795291194/" target="_blank" rel="noopener noreferrer" className="flex items-center">
               <FileText className="w-4 h-4 mr-2" /> Resume
             </a>
           </Button>
@@ -103,9 +107,9 @@ const Navbar = () => {
                     duration={500}
                     offset={-100}
                     onClick={toggleMenu}
-                    className="nav-link cursor-pointer font-medium"
+                    className="nav-link cursor-pointer font-medium hover:text-portfolio-primary transition-colors duration-300"
                   >
-                    <span className="text-portfolio-primary mono mr-1">{`0${index + 1}.`}</span> {item.name}
+                    {item.name}
                   </Link>
                 </li>
               ))}
