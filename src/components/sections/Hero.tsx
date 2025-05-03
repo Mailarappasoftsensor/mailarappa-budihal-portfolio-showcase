@@ -87,6 +87,12 @@ const Hero = () => {
                   </Link>
                 </Button>
 
+                <Button asChild className="bg-transparent border border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 hover:scale-105 transition-all duration-300 shadow-md hover:shadow-portfolio-primary/20">
+                  <a href="https://drive.google.com/uc?export=download&id=17D65qXhWLgkScYC4rzFolMw00wrLxS7e" target="_blank" rel="noopener noreferrer">
+                    Download Resume <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                  </a>
+                </Button>
+
                 <div className="flex items-center space-x-4">
                   <a
                     href="https://github.com/Mailarappa-Budihal"

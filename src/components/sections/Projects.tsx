@@ -14,7 +14,7 @@ const projects = [
     solution: "Developed a custom LoRA training pipeline with 20 images per subject, implemented ControlNets for feature preservation, and created a seamless fusion algorithm.",
     tech: ["Python", "LoRA Training", "ControlNets", "ComfyUI", "Image Processing","Jupyter Notebook","JarvisLabs"],
     demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc",
-    image: "https://drive.google.com/uc?export=view&id=1A97xGIbZdwYMpSFJ-EiCp4SrNbAW0Mba",
+    image: "https://media.licdn.com/dms/image/v2/D5622AQEE-1stDScDFA/feedshare-shrink_1280/B56ZZjBG8gHsAo-/0/1745417976926?e=1749081600&v=beta&t=m99JbaeHIshVYL15rasb5-RRRFz0jzDE808pZUJ89pk",
     type: "Generative AI"
   },
   {
@@ -80,11 +80,11 @@ const Projects = () => {
                   <Card
                     className="border border-gray-800 bg-portfolio-dark/50 shadow-lg overflow-hidden hover:shadow-portfolio-primary/20 hover:border-portfolio-primary/30 transition-all duration-300 hover:translate-y-[-5px]"
                   >
-                    <div className="relative h-64 overflow-hidden">
+                    <div className="relative h-80 overflow-hidden">
                       <img
                         src={project.image}
                         alt={project.title}
-                        className="absolute inset-0 w-full h-full object-cover transform transition duration-500 group-hover:scale-110"
+                        className="absolute inset-0 w-full h-full object-contain transform transition duration-500 group-hover:scale-105"
                         loading="lazy"
                         onError={(e) => {
                           const img = e.target as HTMLImageElement;
