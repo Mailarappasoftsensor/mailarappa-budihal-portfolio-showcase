@@ -55,16 +55,11 @@ const SkillBar = ({ skill, inView, index }: { skill: Skill; inView: boolean; ind
       </div>
       <div className="skill-progress">
         <div
-          className={inView ? "progress-fill h-full bg-portfolio-primary" : "w-0 h-full bg-portfolio-primary"}
-          style={
-            inView
-              ? {
-                  width: `${skill.level}%`,
-                  "--percent": `${skill.level}%`,
-                  "--delay": `${0.2 + index * 0.1}s`,
-                } as React.CSSProperties
-              : {}
-          }
+          className={inView ? "progress-fill" : "w-0"}
+          style={{
+            width: `${skill.level}%`,
+            transitionDelay: `${0.2 + index * 0.1}s`,
+          }}
         ></div>
       </div>
     </div>
@@ -82,23 +77,33 @@ const Skills = () => {
       <div className="container mx-auto px-4">
         <div
           ref={ref}
-          className={`section ${inView ? "animate-slide-up" : ""}`}
-          style={{ "--delay": "0.2s" } as React.CSSProperties}
+          className="skill-container"
+          style={{
+            opacity: inView ? 1 : 0,
+            transform: inView ? "translateY(0)" : "translateY(10px)",
+            transitionDelay: "0.2s",
+          }}
         >
+          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12 relative inline-block">
+            <span className="relative z-10">Technical Skills</span>
+            <span className="absolute bottom-0 left-0 w-full h-1 bg-portfolio-primary/30"></span>
           <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
             <span className="text-portfolio-primary mono mr-2"></span> Technical Skills
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {skillCategories.map((category, catIndex) => (
-              <div 
+              <div
                 key={catIndex}
                 className={`bg-portfolio-dark/50 border border-gray-800 rounded-lg p-6 shadow-lg transform transition-all ${
                   inView ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
                 }`}
                 style={{ transitionDelay: `${catIndex * 0.2}s` }}
               >
-                <h3 className="text-xl font-semibold mb-6 text-portfolio-primary">{category.title}</h3>
+                <h3 className="text-xl font-semibold mb-6 text-portfolio-primary flex items-center">
+                  <span className="w-2 h-2 bg-portfolio-primary mr-2 rounded-full"></span>
+                  {category.title}
+                </h3>
                 <div>
                   {category.skills.map((skill, index) => (
                     <SkillBar key={index} skill={skill} inView={inView} index={index} />

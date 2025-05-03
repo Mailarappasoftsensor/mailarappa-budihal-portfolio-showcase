@@ -14,7 +14,7 @@ import ParticlesBackground from "@/components/effects/ParticlesBackground";
 
 const Index = () => {
   useEffect(() => {
-    document.title = "Mailarappa Budihal | Backend Developer";
+    document.title = "Mailarappa Budihal | Backend Developer & AI Specialist";
   }, []);
 
   return (

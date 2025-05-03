@@ -70,52 +70,61 @@ const Projects = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {projects.map((project, index) => (
-              <Card 
+              <Card
                 key={index}
-                className={`border border-gray-800 bg-portfolio-dark/50 shadow-lg overflow-hidden card-hover ${
+                className={`border border-gray-800 bg-portfolio-dark/50 shadow-lg overflow-hidden card-hover hover:shadow-portfolio-primary/20 hover:border-portfolio-primary/30 transition-all duration-300 hover:translate-y-[-5px] ${
                   inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
                 }`}
                 style={{ transitionDelay: `${index * 0.1}s` }}
               >
                 <div className="h-48 overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transform hover:scale-110 transition duration-500"
                   />
                 </div>
                 <CardHeader className="pb-2">
-                  <CardTitle className="text-white text-xl">{project.title}</CardTitle>
+                  <CardTitle className="text-white text-xl relative inline-block">
+                    <span className="relative z-10">{project.title}</span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-portfolio-primary group-hover:w-full transition-all duration-500"></span>
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="pb-2">
                   <CardDescription className="text-portfolio-text text-sm mb-3">
                     {project.description}
                   </CardDescription>
-                  <div className="mb-3">
-                    <h4 className="text-xs uppercase text-portfolio-primary font-semibold mb-1">Problem:</h4>
+                  <div className="mb-3 bg-portfolio-dark/70 p-2 rounded-md border-l-2 border-portfolio-primary">
+                    <h4 className="text-xs uppercase text-portfolio-primary font-semibold mb-1 flex items-center">
+                      <span className="w-1 h-1 bg-portfolio-primary mr-1 rounded-full"></span>
+                      Problem:
+                    </h4>
                     <p className="text-xs text-portfolio-text">{project.problem}</p>
                   </div>
-                  <div className="mb-3">
-                    <h4 className="text-xs uppercase text-portfolio-primary font-semibold mb-1">Solution:</h4>
+                  <div className="mb-3 bg-portfolio-dark/70 p-2 rounded-md border-l-2 border-portfolio-primary">
+                    <h4 className="text-xs uppercase text-portfolio-primary font-semibold mb-1 flex items-center">
+                      <span className="w-1 h-1 bg-portfolio-primary mr-1 rounded-full"></span>
+                      Solution:
+                    </h4>
                     <p className="text-xs text-portfolio-text">{project.solution}</p>
                   </div>
                 </CardContent>
                 <CardFooter className="flex flex-col items-start">
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, i) => (
-                      <span key={i} className="badge">
+                      <span key={i} className="badge bg-portfolio-primary/10 text-portfolio-primary text-xs py-1 px-2 rounded-full border border-portfolio-primary/20">
                         {tech}
                       </span>
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0">
+                    <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0 hover:bg-portfolio-primary/10 transition-all duration-300">
                       <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
                         <Github className="w-4 h-4 mr-1" />
                         <span>Code</span>
                       </a>
                     </Button>
-                    <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0">
+                    <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0 hover:bg-portfolio-primary/10 transition-all duration-300">
                       <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center">
                         <Link className="w-4 h-4 mr-1" />
                         <span>Demo</span>
