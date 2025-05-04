@@ -13,7 +13,7 @@ const skillCategories = [
     skills: [
       { name: "ComfyUI Workflow Building", level: 95 },
       { name: "Jarvis Labs Integration", level: 90 },
-      { name: "LoRA Model Training", level: 92 },
+      { name: "LoRa Model Training", level: 92 },
       { name: "ControlNets Implementation", level: 88 },
       { name: "Image Generation Techniques", level: 90 },
       { name: "IP Adapters Development", level: 85 },
@@ -40,8 +40,7 @@ const skillCategories = [
   {
     title: "Cloud & Infrastructure",
     skills: [
-      { name: "AWS S3", level: 80 },
-      { name: "Docker", level: 85 }
+      { name: "AWS S3", level: 80 }
     ],
   },
 ];

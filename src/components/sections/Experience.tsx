@@ -143,20 +143,6 @@ const Experience = () => {
               </Card>
             ))}
           </div>
-          
-          <div className="mt-10 p-4 bg-portfolio-dark/70 border border-gray-800 rounded-lg">
-            <h3 className="text-white font-semibold mb-2 flex items-center">
-              <Link2 className="w-4 h-4 text-portfolio-primary mr-2" /> Professional Development
-            </h3>
-            <p className="text-portfolio-text text-sm">
-              Continuously improving technical skills through structured learning and practical application. 
-              Currently exploring advanced patterns in microservices architecture and deepening knowledge of AI integration in web applications.
-            </p>
-            <div className="flex items-center mt-3">
-              <ExternalLink className="w-4 h-4 text-portfolio-primary mr-2" />
-              <span className="text-sm text-portfolio-text">Open to collaboration on innovative projects</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>

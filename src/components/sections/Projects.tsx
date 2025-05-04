@@ -12,8 +12,9 @@ const projects = [
       "A groundbreaking AI system that generates unique portraits by fusing characteristics from two different subjects.",
     problem: "Creating realistic AI-generated portraits that combine features from multiple subjects is challenging and requires extensive data preparation.",
     solution: "Developed a custom LoRA training pipeline with 20 images per subject, implemented ControlNets for feature preservation, and created a seamless fusion algorithm.",
-    tech: ["Python", "LoRA Training", "ControlNets", "ComfyUI", "Image Processing","Jupyter Notebook","JarvisLabs"],
+    tech: ["Python", "LoRa Training", "ControlNets", "ComfyUI", "Image Processing","Jupyter Notebook","JarvisLabs"],
     demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc",
+    github: "",
     image: "https://media.licdn.com/dms/image/v2/D5622AQEE-1stDScDFA/feedshare-shrink_1280/B56ZZjBG8gHsAo-/0/1745417976926?e=1749081600&v=beta&t=m99JbaeHIshVYL15rasb5-RRRFz0jzDE808pZUJ89pk",
     type: "Generative AI"
   },
@@ -23,9 +24,9 @@ const projects = [
       "An intelligent test case generation system that automates the creation of comprehensive test cases for software development.",
     problem: "Manual test case creation is time-consuming and prone to human error in large-scale development projects.",
     solution: "Built a Gradio-based frontend with GroqCloud LLM backend that generates detailed test cases based on code analysis and requirements.",
-    tech: ["Python", "Gradio", "GroqCloud", "NLP", "Code Analysis", "Test Automation"],
+    tech: ["Python", "Gradio", "GroqCloud"],
     demo: "https://huggingface.co/spaces/MailarappaBudihal/TestcaseGenerator",
-    image: "/projects/test-generator.png",
+    image: "https://media.licdn.com/dms/image/sync/v2/D5627AQEBT73b9GZKYA/articleshare-shrink_160/B56ZacXSUHHAAk-/0/1746380074236?e=1746986400&v=beta&t=8bNwcjiaHXRK22rGQVd3hBeY8wG3ADS1rn-PICAxBNY",
     type: "Generative AI"
   },
   {
@@ -37,7 +38,9 @@ const projects = [
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "AWS S3", "JWT"],
         image: "https://img.freepik.com/free-photo/discount-shopping-season-with-sale_23-2150165932.jpg?t=st=1746277375~exp=1746280975~hmac=ef121bf6b163a4e5daa19e25b65aed71ace5a353cd73706f23585671c730abd8&w=996",
 
-    type: "Backend"
+    type: "Backend",
+    demo: "https://github.com/Mailarappa-Budihal/project-5-Shoping-cart",
+    github: "https://github.com/Mailarappa-Budihal/project-5-Shoping-cart",
   },
   {
     title: "URL Shortener",
@@ -47,7 +50,9 @@ const projects = [
     solution: "Built a system that generates short, unique URLs with Redis caching to handle high traffic loads and MongoDB for persistent storage.",
     tech: ["JavaScript", "Node.js", "Express.js", "MongoDB", "Redis"],
        image: "https://www.bulkgate.com/wp-content/uploads/2022/05/blog-url-shortener.jpg",
-    type: "Backend"
+    type: "Backend",
+    demo: "https://github.com/Mailarappa-Budihal/project-4-UrlShortner-own",
+    github: "https://github.com/Mailarappa-Budihal/project-4-UrlShortner-own",
   }
 ];
 
@@ -166,18 +171,21 @@ const Projects = () => {
                     </CardContent>
                     <CardFooter className="flex flex-col items-start">
                       <div className="flex gap-4">
-                        <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0 hover:bg-portfolio-primary/10 transition-all duration-300">
-                          <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                            <Github className="w-4 h-4 mr-1" />
-                            <span>Code</span>
-                          </a>
-                        </Button>
-                        <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0 hover:bg-portfolio-primary/10 transition-all duration-300">
-                          <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                            <ExternalLink className="w-4 h-4 mr-1" />
-                            <span>Demo</span>
-                          </a>
-                        </Button>
+                        {index < 2 ? (
+                          <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0 hover:bg-portfolio-primary/10 transition-all duration-300">
+                            <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                              <ExternalLink className="w-4 h-4 mr-1" />
+                              <span>Demo</span>
+                            </a>
+                          </Button>
+                        ) : (
+                          <Button variant="ghost" size="sm" asChild className="text-portfolio-primary hover:text-portfolio-primary/80 p-0 hover:bg-portfolio-primary/10 transition-all duration-300">
+                            <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
+                              <Github className="w-4 h-4 mr-1" />
+                              <span>Code</span>
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     </CardFooter>
                   </Card>

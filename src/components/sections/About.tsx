@@ -100,7 +100,7 @@ const About = () => {
 
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-portfolio-text">LoRA Model Training</span>
+                    <span className="text-portfolio-text">LoRa Model Training</span>
                     <span className="text-portfolio-primary">90%</span>
                   </div>
                   <div className="w-full bg-gray-800 rounded-full h-2.5">

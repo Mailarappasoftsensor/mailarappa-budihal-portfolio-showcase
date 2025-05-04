@@ -23,9 +23,9 @@ const Hero = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col gap-8">
             <div
-              className={`opacity-0 ${mounted ? "animate-fade-in" : ""} delay-100`}
+              className={`opacity-0 ${mounted ? "animate-fade-in" : ""} delay-100 mx-auto`}
             >
-              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-portfolio-primary">
+              <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-portfolio-primary mx-auto">
                 <AvatarImage src="/lovable-uploads/48d5e614-364e-4a28-a1bd-a7b0b86471ce.png" alt="Mailarappa Budihal" />
                 <AvatarFallback>MB</AvatarFallback>
               </Avatar>
