@@ -72,7 +72,7 @@ const Navbar = () => {
           </ul>
 
           <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 hover:scale-105 transition-all duration-300 shadow-md hover:shadow-portfolio-primary/20">
-            <a href="https://drive.google.com/file/d/1Op2dzO1LpY_1FNYk2oVsfH_-iWVNyOoa/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex items-center">
+            <a href="https://drive.google.com/file/d/1XgsrjewRhKJkm77-jth7sWdBRFOQe1g3/view?usp=drive_link" target="_blank" rel="noopener noreferrer" className="flex items-center">
               <FileText className="w-4 h-4 mr-2" /> Resume
             </a>
           </Button>
@@ -132,7 +132,7 @@ const Navbar = () => {
                 <Linkedin />
               </a>
               <Button asChild variant="outline" className="border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10">
-                <a href="https://drive.google.com/file/d/1Op2dzO1LpY_1FNYk2oVsfH_-iWVNyOoa/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                <a href="https://drive.google.com/file/d/1XgsrjewRhKJkm77-jth7sWdBRFOQe1g3/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                   <FileText className="w-4 h-4 mr-2" /> Resume
                 </a>
               </Button>
