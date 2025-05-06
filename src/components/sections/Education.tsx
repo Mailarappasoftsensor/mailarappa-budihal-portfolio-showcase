@@ -6,6 +6,12 @@ import { Book, Calendar } from "lucide-react";
 
 const education = [
   {
+    institution: "100x Engineers",
+    degree: "Applied Generative AI ",
+    year: "July-2025",
+    description: "Studing Applied Generative AI at 100x Engineers"
+  },
+  {
     institution: "College of Agriculture, Dharwad",
     degree: "B.Sc(Hon.) Agriculture",
     year: "2021",

@@ -88,7 +88,7 @@ const Hero = () => {
                 </Button>
 
                 <Button asChild className="bg-transparent border border-portfolio-primary text-portfolio-primary hover:bg-portfolio-primary/10 hover:scale-105 transition-all duration-300 shadow-md hover:shadow-portfolio-primary/20">
-                  <a href="https://drive.google.com/file/d/1XgsrjewRhKJkm77-jth7sWdBRFOQe1g3/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                  <a href="https://drive.google.com/file/d/1ObiebOMwZ-n6Zp1nxJsB4roK1PO5IxQD/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
                     Download Resume <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
                   </a>
                 </Button>
