@@ -3,6 +3,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Calendar } from "lucide-react";
+import "@/styles/common.css";
 
 const Contact = () => {
   const [ref, inView] = useInView({
@@ -15,8 +16,7 @@ const Contact = () => {
       <div className="container mx-auto px-4 max-w-2xl text-center">
         <div
           ref={ref}
-          className={`section ${inView ? "animate-fade-in" : ""}`}
-          style={{ "--delay": "0.2s" } as React.CSSProperties}
+          className={`section ${inView ? "animate-fade-in" : ""} animation-delay-02s`}
         >
           <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12 flex items-center">
             <span className="text-portfolio-primary mono mr-2 text-4xl">/</span>
