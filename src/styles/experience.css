@@ -1,0 +1,24 @@
+/* Experience component styles */
+
+.experience-toggle-open {
+  transform: rotate(180deg);
+}
+
+.experience-toggle-closed {
+  transform: rotate(0deg);
+}
+
+.experience-card-expanded {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.experience-card-collapsed {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.animation-delay-02s {
+  --delay: 0.2s;
+}

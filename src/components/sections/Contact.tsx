@@ -18,8 +18,11 @@ const Contact = () => {
           className={`section ${inView ? "animate-fade-in" : ""}`}
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
-          <p className="text-portfolio-primary mono mb-2">07. What's Next?</p>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Get In Touch</h2>
+          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12 flex items-center">
+            <span className="text-portfolio-primary mono mr-2 text-4xl">/</span>
+            <span>📞 Contact Me</span>
+            <div className="h-px bg-gradient-to-r from-portfolio-primary to-transparent flex-grow ml-4"></div>
+          </h2>
           
           <p className="text-portfolio-text mb-5">
             I'm currently looking for new opportunities. Whether you have a question or just want to say hi, 

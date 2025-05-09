@@ -3,6 +3,7 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Book, Calendar } from "lucide-react";
+import "@/styles/common.css";
 
 const education = [
   {
@@ -58,11 +59,12 @@ const Education = () => {
       <div className="container mx-auto px-4">
         <div
           ref={ref}
-          className={`section ${inView ? "animate-slide-up" : ""}`}
-          style={{ "--delay": "0.2s" } as React.CSSProperties}
+          className={`section ${inView ? "animate-slide-up" : ""} animation-delay-02s`}
         >
-          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
-            <span className="text-portfolio-primary mono mr-2"></span> Education & Certificates
+          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12 flex items-center">
+            <span className="text-portfolio-primary mono mr-2 text-4xl">/</span>
+            <span>🎓 Education & Certificates</span>
+            <div className="h-px bg-gradient-to-r from-portfolio-primary to-transparent flex-grow ml-4"></div>
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">

@@ -39,8 +39,10 @@ const Testimonials = () => {
           className={`section ${inView ? "animate-slide-up" : ""}`}
           style={{ "--delay": "0.2s" } as React.CSSProperties}
         >
-          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12">
-            <span className="text-portfolio-primary mono mr-2"></span> Testimonials
+          <h2 className="section-heading text-2xl md:text-3xl font-bold mb-12 flex items-center">
+            <span className="text-portfolio-primary mono mr-2 text-4xl">/</span>
+            <span>💬 Testimonials</span>
+            <div className="h-px bg-gradient-to-r from-portfolio-primary to-transparent flex-grow ml-4"></div>
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6">
