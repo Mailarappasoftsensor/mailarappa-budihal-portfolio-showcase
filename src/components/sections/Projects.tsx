@@ -20,7 +20,7 @@ const Projects = () => {
       solution: "Developed a custom LoRA training pipeline with 20 images per subject, implemented ControlNets for feature preservation, and created a seamless fusion algorithm.",
       tech: ["Python", "LoRa Training", "ControlNets", "ComfyUI", "Image Processing", "Jupyter Notebook", "JarvisLabs"],
       github: "",
-      demo: "https://www.notion.so/MID-Capstone-Project-Template-1db81a2d58e1806f80b2c31b1d9414dc",
+      demo: "https://drive.google.com/file/d/1sA7PF2OzvGkP-WriJRSq5uvTOlc8fk_H/view?usp=drive_link",
       type: "Generative AI"
     },
     {
